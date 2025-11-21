@@ -14,6 +14,7 @@ header {
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 header h1 {
@@ -26,32 +27,32 @@ nav a {
   color: #555;
   margin: 0 12px;
   font-weight: 500;
-  
 }
 
 nav a:hover {
   color: #007bff;
 }
 
-header div a {
+header .auth-links a {
   margin-left: 12px;
   text-decoration: none;
   font-weight: 500;
 }
 
-header div a:last-child {
+header .auth-links a.signup-btn {
   background-color: #007bff;
   color: white;
   padding: 8px 15px;
   border-radius: 5px;
 }
 
-header div a:last-child:hover {
+header .auth-links a.signup-btn:hover {
   background-color: #0056c7;
 }
 
-section:first-of-type {
-  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+.hero-section {
+  background: url("../images/properties/hero\ page\ background\ .png")
+    center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 120px 20px;
@@ -59,20 +60,13 @@ section:first-of-type {
   width: 100%;
 }
 
-section:first-of-type h2 {
+.hero-section h2 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-section:first-of-type p {
-  font-size: 18px;
-  margin-bottom: 25px;
-} */
-
-section:first-of-type button {
-  background-color: #007bff;
-  color: white;
+.hero-btn {
   border: none;
   padding: 12px 25px;
   margin: 10px;
@@ -81,13 +75,18 @@ section:first-of-type button {
   font-size: 16px;
 }
 
-section:first-of-type button:last-child {
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.outline-btn {
   background-color: white;
   color: #007bff;
   border: 1px solid #007bff;
 }
 
-section:nth-of-type(2) {
+.search-section {
   background-color: white;
   margin: -40px auto 40px;
   width: 80%;
@@ -95,31 +94,30 @@ section:nth-of-type(2) {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   padding: 20px 30px;
-  text-align: center; 
+  text-align: center;
 }
 
-form {
+.search-section form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10px;
 }
 
-form label {
+.search-section label {
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-form select {
+.search-section select {
   padding: 8px;
   width: 180px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-form button {
+.search-section button {
   background-color: #007bff;
   color: white;
   border: none;
@@ -128,32 +126,16 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
-  background-color: #0056c7;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f3f3f3;
-  font-size: 14px;
-  color: #555;
-}
-.featured {
+.featured-section {
   text-align: center;
   padding: 50px 20px;
   background-color: #fff;
 }
 
-.featured h2 {
+.featured-section h2 {
   font-size: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: #222;
-}
-
-.featured p {
-  color: #777;
-  margin-bottom: 40px;
 }
 
 .property-list {
@@ -170,7 +152,6 @@ footer {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 15px;
-  text-align: left;
 }
 
 .property-card img {
@@ -205,10 +186,6 @@ footer {
   cursor: pointer;
 }
 
-.property-card button:hover {
-  background-color: #0056c7;
-}
-
 .view-all {
   margin-top: 30px;
 }
@@ -221,10 +198,6 @@ footer {
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
-}
-
-.view-all button:hover {
-  background-color: #0056c7;
 }
 
 footer {
