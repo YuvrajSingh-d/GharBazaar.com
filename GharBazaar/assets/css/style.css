@@ -370,25 +370,6 @@ footer .copyright {
   margin-top: 5px;
 }
 
-.pagination {
-  text-align: center;
-  margin: 20px 0 50px;
-}
-
-.pagination button {
-  padding: 8px 15px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: white;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.pagination .active {
-  background: #007bff;
-  color: white;
-}
-
 .auth-container {
     width: 450px;
     margin: 120px auto;
@@ -482,4 +463,7 @@ button:hover {
     transform: scale(1.02);
     transition: 0.2s ease;
 }
+
+
+
 
