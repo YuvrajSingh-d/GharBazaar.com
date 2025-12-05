@@ -4,46 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residential Properties | GharBazaar</title>
-    <link rel="stylesheet" href="../../assets/css/residential.css">
+
+    <!-- Use the same CSS setup as index.html -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">GharBazaar</div>
+    <!-- Same HEADER structure as index.html, but with correct paths -->
+    <header>
+        <div class="header-left">
+            <button class="menu-btn" id="menuToggle">⋮</button>
+            <h1>GharBazaar</h1>
+        </div>
 
-        <nav>
-            <a href="#">Home</a>
-            <a class="active" href="#">Residential</a>
-            <a href="#">Commercial</a>
-            <a href="#">ROI</a>
-            <a href="#">Rent/Buy-Sell</a>
-            <a href="#">About</a>
+        <nav class="desktop-nav">
+            <a href="../../index.html">Home</a>
+            <a href="residential.html" class="active">Residential</a>
+            <a href="commercial.html">Commercial</a>
+            <a href="roi.html">ROI</a>
+            <a href="rent.html">Rent/Buy-Sell</a>
+            <a href="../about.html">About</a>
         </nav>
 
-        <div class="nav-buttons">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="signup">Sign Up</a>
+        <div class="auth-links desktop-auth">
+            <a href="../login.html">Login</a>
+            <a href="../signup.html" class="signup-btn">Sign Up</a>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../../index.html">Home</a>
+            <a href="residential.html" class="active">Residential</a>
+            <a href="commercial.html">Commercial</a>
+            <a href="roi.html">ROI</a>
+            <a href="rent.html">Rent/Buy-Sell</a>
+            <a href="../about.html">About</a>
+            <a href="../login.html">Login</a>
+            <a href="../signup.html" class="signup-btn">Sign Up</a>
         </div>
     </header>
-
-    <!-- BREADCRUMB -->
-    <div class="breadcrumb">
-        Home > <span>Residential Properties</span>
-    </div>
-
-    <!-- PAGE HEADING -->
+    <!-- Page title -->
     <section class="page-header">
         <h2>Residential Properties</h2>
-        <p>Discover luxury homes in South Delhi's finest neighborhoods</p>
     </section>
 
-    <!-- FILTER BOX -->
+    <!-- Filter box (kept) -->
     <section class="filter-box">
         <h3>Filter Properties</h3>
 
         <div class="filter-grid">
+
             <div class="filter-item">
                 <label>Locality</label>
                 <select>
@@ -74,11 +84,9 @@
 
             <button class="apply-filter">Apply Filters</button>
         </div>
-
-        <p class="note">* Filter functionality will be enabled in Phase 2</p>
     </section>
 
-    <!-- SORTING + TOTAL RESULTS -->
+    <!-- Results header -->
     <div class="results-header">
         <span>Showing 12 properties</span>
 
@@ -87,64 +95,47 @@
         </select>
     </div>
 
-    <!-- PROPERTY GRID -->
-    <section class="property-grid">
+    <!-- Property list: uses SAME layout as index.html -->
+    <section class="property-list residential-list">
 
-        <!-- CARD 1 -->
         <div class="property-card">
-            <img src="assets/images/properties/home-background.jpeg" alt="">
-            <div class="card-content">
-                <h3>Luxury Penthouse with City Views</h3>
-                <p class="location">📍 Greater Kailash I</p>
-                <p>4 BHK • 3500 sqft</p>
-                <p class="price-label">Price</p>
-                <p class="price">Price on Request</p>
-                <button class="details-btn">View Details</button>
-            </div>
+            <img src="../../assets/images/properties/residentialproperty1.png" alt="">
+            <h3>Luxury Penthouse with City Views</h3>
+            <p class="location">📍 Greater Kailash I</p>
+            <p>4 BHK • 3500 sqft</p>
+            <p class="price">Price on Request</p>
+            <button>View Details</button>
         </div>
 
-        <!-- CARD 2 -->
         <div class="property-card">
-            <img src="assets/images/properties/home-background.jpeg" alt="">
-            <div class="card-content">
-                <h3>Elegant Villa with Pool</h3>
-                <p class="location">📍 Chattarpur</p>
-                <p>5 BHK • 6000 sqft</p>
-                <p class="price-label">Price</p>
-                <p class="price">Price on Request</p>
-                <button class="details-btn">View Details</button>
-            </div>
+            <img src="../../assets/images/properties/residentialproperty2.png" alt="">
+            <h3>Elegant Villa with Pool</h3>
+            <p class="location">📍 Chattarpur</p>
+            <p>5 BHK • 6000 sqft</p>
+            <p class="price">Price on Request</p>
+            <button>View Details</button>
         </div>
 
-        <!-- CARD 3 -->
         <div class="property-card">
-            <img src="assets/images/properties/home-background.jpeg" alt="">
-            <div class="card-content">
-                <h3>Premium Apartment Complex</h3>
-                <p class="location">📍 Defence Colony</p>
-                <p>3 BHK • 2400 sqft</p>
-                <p class="price-label">Price</p>
-                <p class="price">₹4.2 Cr</p>
-                <button class="details-btn">View Details</button>
-            </div>
+            <img src="../../assets/images/properties/residentialproperty3.png" alt="">
+            <h3>Premium Apartment Complex</h3>
+            <p class="location">📍 Defence Colony</p>
+            <p>3 BHK • 2400 sqft</p>
+            <p class="price">₹4.2 Cr</p>
+            <button>View Details</button>
         </div>
 
-        <!-- CARD 4 -->
         <div class="property-card">
-            <img src="assets/images/properties/home-background.jpeg" alt="">
-            <div class="card-content">
-                <h3>Modern Studio Apartment</h3>
-                <p class="location">📍 Saket</p>
-                <p>2 BHK • 1800 sqft</p>
-                <p class="price-label">Price</p>
-                <p class="price">₹2.9 Cr</p>
-                <button class="details-btn">View Details</button>
-            </div>
+            <img src="../../assets/images/properties/residentialproperty4.png" alt="">
+            <h3>Modern Studio Apartment</h3>
+            <p class="location">📍 Saket</p>
+            <p>2 BHK • 1800 sqft</p>
+            <p class="price">₹2.9 Cr</p>
+            <button>View Details</button>
         </div>
 
     </section>
 
-    <!-- PAGINATION -->
     <div class="pagination">
         <button>&lt;</button>
         <button class="active">1</button>
@@ -153,11 +144,8 @@
         <button>&gt;</button>
     </div>
 
-    <p class="pagination-note">* Pagination is non-functional in Phase 1</p>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-grid">
+    <footer>
+        <div class="footer-columns">
 
             <div>
                 <h3>GharBazaar</h3>
@@ -190,8 +178,8 @@
 
         </div>
 
-        <div class="footer-bottom">
-            © 2025 GharBazaar — Static HTML/CSS Website (Phase 1)
+        <div class="copyright">
+            © 2025 GharBazaar. All rights reserved.
         </div>
     </footer>
 
