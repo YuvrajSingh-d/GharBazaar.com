@@ -5,183 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residential Properties | GharBazaar</title>
 
-    <!-- Use the same CSS setup as index.html -->
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
 </head>
 
 <body>
 
-    <!-- Same HEADER structure as index.html, but with correct paths -->
-    <header>
-        <div class="header-left">
-            <button class="menu-btn" id="menuToggle">⋮</button>
-            <h1>GharBazaar</h1>
-        </div>
-
-        <nav class="desktop-nav">
-            <a href="../../index.html">Home</a>
-            <a href="residential.html" class="active">Residential</a>
-            <a href="commercial.html">Commercial</a>
-            <a href="roi.html">ROI</a>
-            <a href="rent.html">Rent/Buy-Sell</a>
-            <a href="../about.html">About</a>
-        </nav>
-
-        <div class="auth-links desktop-auth">
-            <a href="../login.html">Login</a>
-            <a href="../signup.html" class="signup-btn">Sign Up</a>
-        </div>
-
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="../../index.html">Home</a>
-            <a href="residential.html" class="active">Residential</a>
-            <a href="commercial.html">Commercial</a>
-            <a href="roi.html">ROI</a>
-            <a href="rent.html">Rent/Buy-Sell</a>
-            <a href="../about.html">About</a>
-            <a href="../login.html">Login</a>
-            <a href="../signup.html" class="signup-btn">Sign Up</a>
-        </div>
-    </header>
-    <!-- Page title -->
-    <section class="page-header">
-        <h2>Residential Properties</h2>
-    </section>
-
-    <!-- Filter box (kept) -->
-    <section class="filter-box">
-        <h3>Filter Properties</h3>
-
-        <div class="filter-grid">
-
-            <div class="filter-item">
-                <label>Locality</label>
-                <select>
-                    <option>All Localities</option>
-                </select>
-            </div>
-
-            <div class="filter-item">
-                <label>Price Range</label>
-                <select>
-                    <option>Any Price</option>
-                </select>
-            </div>
-
-            <div class="filter-item">
-                <label>Bedrooms</label>
-                <select>
-                    <option>Any</option>
-                </select>
-            </div>
-
-            <div class="filter-item">
-                <label>Property Type</label>
-                <select>
-                    <option>All Types</option>
-                </select>
-            </div>
-
-            <button class="apply-filter">Apply Filters</button>
-        </div>
-    </section>
-
-    <!-- Results header -->
-    <div class="results-header">
-        <span>Showing 12 properties</span>
-
-        <select class="sort-dropdown">
-            <option>Sort by: Featured</option>
-        </select>
+<header>
+    <div class="header-left">
+        <button class="menu-btn" id="menuToggle">⋮</button>
+        <h1>GharBazaar</h1>
     </div>
 
-    <!-- Property list: uses SAME layout as index.html -->
-    <section class="property-list residential-list">
+    <nav class="desktop-nav">
+        <a href="../../index.html">Home</a>
+        <a class="active" href="residential.html">Residential</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="roi.html">ROI</a>
+        <a href="../about.html">About</a>
+    </nav>
 
-        <div class="property-card">
-            <img src="../../assets/images/properties/residentialproperty1.png" alt="">
-            <h3>Luxury Penthouse with City Views</h3>
-            <p class="location">📍 Greater Kailash I</p>
-            <p>4 BHK • 3500 sqft</p>
-            <p class="price">Price on Request</p>
-            <button>View Details</button>
-        </div>
-
-        <div class="property-card">
-            <img src="../../assets/images/properties/residentialproperty2.png" alt="">
-            <h3>Elegant Villa with Pool</h3>
-            <p class="location">📍 Chattarpur</p>
-            <p>5 BHK • 6000 sqft</p>
-            <p class="price">Price on Request</p>
-            <button>View Details</button>
-        </div>
-
-        <div class="property-card">
-            <img src="../../assets/images/properties/residentialproperty3.png" alt="">
-            <h3>Premium Apartment Complex</h3>
-            <p class="location">📍 Defence Colony</p>
-            <p>3 BHK • 2400 sqft</p>
-            <p class="price">₹4.2 Cr</p>
-            <button>View Details</button>
-        </div>
-
-        <div class="property-card">
-            <img src="../../assets/images/properties/residentialproperty4.png" alt="">
-            <h3>Modern Studio Apartment</h3>
-            <p class="location">📍 Saket</p>
-            <p>2 BHK • 1800 sqft</p>
-            <p class="price">₹2.9 Cr</p>
-            <button>View Details</button>
-        </div>
-
-    </section>
-
-    <div class="pagination">
-        <button>&lt;</button>
-        <button class="active">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>&gt;</button>
+    <div class="auth-links desktop-auth">
+        <a href="../login.html">Login</a>
+        <a href="../signup.html" class="signup-btn">Sign Up</a>
     </div>
 
-    <footer>
-        <div class="footer-columns">
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../../index.html">Home</a>
+        <a class="active" href="residential.html">Residential</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="roi.html">ROI</a>
+        <a href="../about.html">About</a>
+        <a href="../login.html">Login</a>
+        <a href="../signup.html" class="signup-btn">Sign Up</a>
+    </div>
+</header>
 
-            <div>
-                <h3>GharBazaar</h3>
-                <p>Your trusted partner for luxury real estate in South Delhi.</p>
-            </div>
+<div class="page-header fade-in">
+    <h2>Residential Properties</h2>
+</div>
 
-            <div>
-                <h4>Quick Links</h4>
-                <p>Residential Properties</p>
-                <p>Commercial Properties</p>
-                <p>Investment Opportunities</p>
-                <p>About Us</p>
-            </div>
+<section class="filter-box fade-in">
+    <h3>Filter Properties</h3>
 
-            <div>
-                <h4>Our Services</h4>
-                <p>Property Buying</p>
-                <p>Property Selling</p>
-                <p>Property Leasing</p>
-                <p>NRI Desk Services</p>
-                <p>Builder Collaborations</p>
-            </div>
-
-            <div>
-                <h4>Contact Us</h4>
-                <p>📍 South Delhi, New Delhi</p>
-                <p>📞 +91 98765 43210</p>
-                <p>📧 info@gharbazaar.com</p>
-            </div>
-
+    <form class="filter-grid">
+        <div class="filter-item">
+            <label>Location</label>
+            <select>
+                <option>South Delhi</option>
+                <option>West Delhi</option>
+                <option>Gurgaon</option>
+            </select>
         </div>
 
-        <div class="copyright">
-            © 2025 GharBazaar. All rights reserved.
+        <div class="filter-item">
+            <label>Price Range</label>
+            <select>
+                <option>Any</option>
+                <option>₹1 Cr - ₹5 Cr</option>
+                <option>₹5 Cr - ₹10 Cr</option>
+            </select>
         </div>
-    </footer>
+
+        <div class="filter-item">
+            <label>Bedrooms</label>
+            <select>
+                <option>2 BHK</option>
+                <option>3 BHK</option>
+                <option>4 BHK</option>
+            </select>
+        </div>
+
+        <button class="apply-filter" type="button">Apply Filter</button>
+    </form>
+</section>
+
+<section class="property-list residential-list fade-in">
+
+    <div class="property-card">
+        <img src="../../assets/images/properties/residentialproperty1.png">
+        <h3>Luxury Pool Mansion</h3>
+        <p>📍 Greater Kailash</p>
+        <p>4 BHK | 2800 sqft</p>
+        <p class="price">₹7.5 Cr</p>
+        <button>View Details</button>
+    </div>
+
+    <div class="property-card">
+        <img src="../../assets/images/properties/residentialproperty2.png">
+        <h3>Modern Duplex Apartment</h3>
+        <p>📍 Saket</p>
+        <p>3 BHK | 2100 sqft</p>
+        <p class="price">₹3.8 Cr</p>
+        <button>View Details</button>
+    </div>
+
+    <div class="property-card">
+        <img src="../../assets/images/properties/residentialproperty3.png">
+        <h3>Eden Residency Appartments</h3>
+        <p>📍 Vasant Vihar</p>
+        <p>5 BHK | 4500 sqft</p>
+        <p class="price">₹12 Cr</p>
+        <button>View Details</button>
+    </div>
+
+</section>
+
+<div class="pagination fade-in">
+    <button class="active">1</button>
+    <button>2</button>
+    <button>3</button>
+</div>
+
+<footer>
+    <div class="footer-columns">
+
+        <div>
+            <h3>GharBazaar</h3>
+            <p>Your trusted partner for luxury real estate in South Delhi.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <p>Residential Properties</p>
+            <p>Commercial Properties</p>
+            <p>Investment Opportunities</p>
+            <p>About Us</p>
+        </div>
+
+        <div>
+            <h4>Our Services</h4>
+            <p>Property Buying</p>
+            <p>Property Selling</p>
+            <p>Property Leasing</p>
+            <p>NRI Desk Services</p>
+            <p>Builder Collaborations</p>
+        </div>
+
+        <div>
+            <h4>Contact Us</h4>
+            <p>📍 South Delhi, New Delhi, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📧 info@gharbazaar.com</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2025 GharBazaar. All rights reserved.
+    </div>
+</footer>
+
+
+<script src="../../assets/js/main.js"></script>
 
 </body>
 </html>

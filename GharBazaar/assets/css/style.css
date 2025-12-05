@@ -56,14 +56,16 @@ header .auth-links a.signup-btn:hover {
   color: white;
   text-align: center;
   padding: 120px 20px;
-  height: 800px;
+  height: 700px;
   width: 100%;
+
 }
 
 .hero-section h2 {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 30px;
+
 }
 
 .hero-btn {
@@ -415,3 +417,69 @@ footer .copyright {
     font-size: 18px;
     line-height: 28px;
 }
+
+.menu-btn {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    width: 220px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.mobile-menu a {
+    padding: 12px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.mobile-menu a:hover {
+    background: #f2f2f2;
+}
+@media (max-width: 900px) {
+    .desktop-nav,
+    .desktop-auth {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+}
+.page-header,
+.featured-section,
+.search-section {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.property-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+

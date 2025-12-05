@@ -11,18 +11,17 @@
 
 <body>
 
-    <header>
+<header>
     <div class="header-left">
         <button class="menu-btn" id="menuToggle">⋮</button>
         <h1>GharBazaar</h1>
     </div>
 
     <nav class="desktop-nav">
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="pages/properties/residential.html">Residential</a>
         <a href="pages/properties/commercial.html">Commercial</a>
         <a href="pages/properties/roi.html">ROI</a>
-        <a href="pages/properties/rent.html">Rent/Buy-Sell</a>
         <a href="pages/about.html">About</a>
     </nav>
 
@@ -32,11 +31,10 @@
     </div>
 
     <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="pages/properties/residential.html">Residential</a>
         <a href="pages/properties/commercial.html">Commercial</a>
         <a href="pages/properties/roi.html">ROI</a>
-        <a href="pages/properties/rent.html">Rent/Buy-Sell</a>
         <a href="pages/about.html">About</a>
         <a href="pages/login.html">Login</a>
         <a href="pages/signup.html" class="signup-btn">Sign Up</a>
@@ -44,127 +42,127 @@
 </header>
 
 
-    <section class="hero-section">
-        <h2>Find Luxury Homes</h2>
+<section class="hero-section">
+    <h2>Find Luxury Homes</h2>
+
+    <div>
+        <button class="hero-btn primary-btn">Browse Listings</button>
+        <button class="hero-btn outline-btn">Contact Us</button>
+    </div>
+</section>
+
+<section class="search-section fade-in">
+
+    <h3>Search Properties</h3>
+
+    <form>
+        <label>Location</label>
+        <select>
+            <option>South Delhi</option>
+            <option>West Delhi</option>
+            <option>Gurgaon</option>
+        </select>
+
+        <label>Property Type</label>
+        <select>
+            <option>All Types</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+        </select>
+
+        <label>Price Range</label>
+        <select>
+            <option>Any Price</option>
+            <option>₹1 Cr - ₹5 Cr</option>
+            <option>₹5 Cr - ₹10 Cr</option>
+        </select>
+
+        <button type="button" onclick="showPropertyCount()">Search</button>
+    </form>
+
+</section>
+
+<section class="featured-section fade-in">
+
+    <h2>Featured Properties</h2>
+
+    <div class="property-list">
+
+        <div class="property-card">
+            <img src="assets/images/properties/oggy ka ghar.webp">
+            <h3>Oggy's Violet Villa</h3>
+            <p>📍 Greater Kailash I</p>
+            <p>4 BHK | 3500 sqft</p>
+            <p><strong>Price:</strong> Price on Request</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="property-card">
+            <img src="assets/images/properties/nobita ka gahr .jpg">
+            <h3>The Nobi Residence</h3>
+            <p>📍 Nehru Place</p>
+            <p>5 BHK | 5000 sqft</p>
+            <p><strong>Price:</strong> ₹8.5 Cr</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="property-card">
+            <img src="assets/images/properties/The_Mickey_Mouse_Clubhouse.webp">
+            <h3>Mickey Mouse Club House</h3>
+            <p>📍 Sohna Road</p>
+            <p>5 BHK | 6000 sqft</p>
+            <p><strong>Price:</strong> Price on Request</p>
+            <button>View Details</button>
+        </div>
+
+    </div>
+
+    <div class="view-all">
+        <button>View All Properties</button>
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-columns">
 
         <div>
-            <button class="hero-btn primary-btn">Browse Listings</button>
-            <button class="hero-btn outline-btn">Contact Us</button>
-        </div>
-    </section>
-
-    <section class="search-section">
-
-        <h3>Search Properties</h3>
-
-        <form>
-
-            <label>Location</label>
-            <select>
-                <option>South Delhi</option>
-                <option>West Delhi</option>
-                <option>Gurgaon</option>
-            </select>
-
-            <label>Property Type</label>
-            <select>
-                <option>All Types</option>
-                <option>Residential</option>
-                <option>Commercial</option>
-            </select>
-
-            <label>Price Range</label>
-            <select>
-                <option>Any Price</option>
-                <option>₹1 Cr - ₹5 Cr</option>
-                <option>₹5 Cr - ₹10 Cr</option>
-            </select>
-
-            <button>Search</button>
-
-        </form>
-
-    </section>
-
-    <section class="featured-section">
-
-        <h2>Featured Properties</h2>
-
-        <div class="property-list">
-
-            <div class="property-card">
-                <img src="assets/images/properties/oggy ka ghar.webp">
-                <h3>Oggy's Violet Villa</h3>
-                <p>📍 Greater Kailash I</p>
-                <p>4 BHK | 3500 sqft</p>
-                <p><strong>Price:</strong> Price on Request</p>
-                <button>View Details</button>
-            </div>
-
-            <div class="property-card">
-                <img src="assets/images/properties/nobita ka gahr .jpg">
-                <h3>The Nobi Residence</h3>
-                <p>📍 Nehru Place</p>
-                <p>5 BHK | 5000 sqft</p>
-                <p><strong>Price:</strong> ₹8.5 Cr</p>
-                <button>View Details</button>
-            </div>
-
-            <div class="property-card">
-                <img src="assets/images/properties/The_Mickey_Mouse_Clubhouse.webp">
-                <h3>Mickey Mouse Club House</h3>
-                <p>📍 Sohna Road</p>
-                <p>5 BHK | 6000 sqft</p>
-                <p><strong>Price:</strong> Price on Request</p>
-                <button>View Details</button>
-            </div>
-
+            <h3>GharBazaar</h3>
+            <p>Your trusted partner for luxury real estate in South Delhi.</p>
         </div>
 
-        <div class="view-all">
-            <button>View All Properties</button>
+        <div>
+            <h4>Quick Links</h4>
+            <p>Residential Properties</p>
+            <p>Commercial Properties</p>
+            <p>Investment Opportunities</p>
+            <p>About Us</p>
         </div>
 
-    </section>
-
-    <footer>
-        <div class="footer-columns">
-
-            <div>
-                <h3>GharBazaar</h3>
-                <p>Your trusted partner for luxury real estate in South Delhi.</p>
-            </div>
-
-            <div>
-                <h4>Quick Links</h4>
-                <p>Residential Properties</p>
-                <p>Commercial Properties</p>
-                <p>Investment Opportunities</p>
-                <p>About Us</p>
-            </div>
-
-            <div>
-                <h4>Our Services</h4>
-                <p>Property Buying</p>
-                <p>Property Selling</p>
-                <p>Property Leasing</p>
-                <p>NRI Desk Services</p>
-                <p>Builder Collaborations</p>
-            </div>
-
-            <div>
-                <h4>Contact Us</h4>
-                <p>📍 South Delhi, New Delhi, India</p>
-                <p>📞 +91 98765 43210</p>
-                <p>📧 info@gharbazaar.com</p>
-            </div>
-
+        <div>
+            <h4>Our Services</h4>
+            <p>Property Buying</p>
+            <p>Property Selling</p>
+            <p>Property Leasing</p>
+            <p>NRI Desk Services</p>
+            <p>Builder Collaborations</p>
         </div>
 
-        <div class="copyright">
-            © 2025 GharBazaar. All rights reserved.
+        <div>
+            <h4>Contact Us</h4>
+            <p>📍 South Delhi, New Delhi, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📧 info@gharbazaar.com</p>
         </div>
-    </footer>
+
+    </div>
+
+    <div class="copyright">
+        © 2025 GharBazaar. All rights reserved.
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
