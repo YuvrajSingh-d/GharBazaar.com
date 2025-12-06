@@ -55,3 +55,16 @@ searchButtons.forEach(btn => {
         console.log("Button Hovered:", btn.innerText);
     });
 });
+// -------------------------------------------------------------------------------
+const fadeInElements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    fadeInElements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight - 100) {
+            element.classList.add('visible');
+        }
+    });
+});
